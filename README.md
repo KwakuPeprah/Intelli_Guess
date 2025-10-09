@@ -19,3 +19,32 @@ Choose your difficulty level, get hints along the way, and see how fast you can 
 ---
 
 ## 🛠️ Project Structure
+INTELLI_GUESS GAME/
+│── intellI_venv
+│── tests/
+│ ├── test_intelli.py # Unit tests
+│── intelli_guess.py
+│── README.md # Project documentation
+
+
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/intelliguess.git
+cd intelliguess
+
+🤝 Contributing
+
+Contributions are welcome!
+
+Fork the repo
+
+Create a new branch (feature-xyz)
+
+Commit your changes
+
+Open a Pull Request

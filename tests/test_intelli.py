@@ -1,5 +1,5 @@
 import unittest
-from unittest.mock import patch
+from unittest.mock import patch #patch lets you simulate user input by temporarily replacing the input function
 
 # IMPORTANT: Ensure your game logic file is imported and aliased as 'game'.
 import intelli_guess as game 
@@ -17,7 +17,7 @@ class TestIntelliGuess(unittest.TestCase):
         self.assertEqual(game.DIFFICULTY_LEVELS['2'], ('Medium', 1, 100))
         self.assertEqual(game.DIFFICULTY_LEVELS['3'], ('Hard', 1, 1000))
 
-    @patch('builtins.input', side_effect=['2'])
+    @patch('builtins.input', side_effect=['2']) #builtins specifies the function to be replaced. In this case, the input function. side_effect tells the replacement function what to return
     def test_select_difficulty_returns_expected_range(self, mock_input):
         """Test selecting difficulty returns correct (Name, Min, Max) tuple."""
         result = game.select_difficulty()
